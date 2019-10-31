@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Uebertragen" type="LejosRunConfigurationType" factoryName="LeJOS">
+    <module name="MeinProg" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
