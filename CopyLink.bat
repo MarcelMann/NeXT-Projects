@@ -1,0 +1,1 @@
+copy "IntelliJ Portable 64-Bit.lnk" C:\Users\%username%\Desktop
