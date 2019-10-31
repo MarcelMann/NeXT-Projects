@@ -52,7 +52,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="960" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="806" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -101,6 +103,14 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Uebertragen" type="LejosRunConfigurationType" factoryName="LeJOS">
+      <module name="MeinProg" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />

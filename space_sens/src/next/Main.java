@@ -1,3 +1,5 @@
+package next;
+
 import next.api.SpaceSensorApi;
 
 public class Main extends SpaceSensorApi {

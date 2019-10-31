@@ -98,7 +98,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1115" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="806" />
     <option name="height" value="1040" />
   </component>
@@ -148,7 +149,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572525368361" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572533049870" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mindroid_wsens" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
@@ -166,7 +167,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Uebertragen" type="LejosRunConfigurationType" factoryName="LeJOS">
-      <module name="MeinProgramm" />
+      <module name="MeinProg" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

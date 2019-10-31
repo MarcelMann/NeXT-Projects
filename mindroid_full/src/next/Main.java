@@ -1,6 +1,8 @@
-import next.api.MindroidSensorApi;
+package next;
 
-public class Main extends MindroidSensorApi {
+import next.api.MindroidFullApi;
+
+public class Main extends MindroidFullApi {
 
     static{
         // gyro = true;
