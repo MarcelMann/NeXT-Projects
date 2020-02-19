@@ -1,5 +1,6 @@
 package next.api;
 
+import lejos.hardware.lcd.LCD;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.hardware.port.MotorPort;
 import lejos.hardware.port.SensorPort;
@@ -7,6 +8,7 @@ import lejos.hardware.sensor.BaseSensor;
 import lejos.hardware.sensor.EV3ColorSensor;
 import lejos.hardware.sensor.EV3GyroSensor;
 import lejos.hardware.sensor.EV3UltrasonicSensor;
+import lejos.internal.ev3.EV3LCD;
 import lejos.utility.Delay;
 
 public class MindroidFullApi {
@@ -36,8 +38,27 @@ public class MindroidFullApi {
     // TODO: DriveToWallAndTurn
     // TODO: DriveUntil Colour
     // TODO: Turn(int angle)
+    /**
+     * Displays the given text onto the EV3 display at the given row.
+     * Row starting Pixel = (Row-1) * 16
+     * @param text the text to display
+     * @param row the row in which the text should be displayed, filtered by modulo 8 to produce values 0 to 7
+     */
+    public final void drawString(final String text, final int row){
+        int calcRow = (row - 1) % 8;
+        LCD.drawString(text, 0, calcRow * 16);
+    }
 
-
+    /**
+     * Displays the given text onto the EV3 display at the 4th row (of 8). (see drawString(final String text, final int row)
+     * @param text
+     */
+    public final void drawString(final String text){
+        drawString(text, 4);
+    }
+    protected static void delay(int ms){
+        Delay.msDelay(ms);
+    }
     protected static float getDistance(){
         if (usSens!=null) {
             float signalwert[] = new float[usSens.sampleSize()];
@@ -84,7 +105,7 @@ public class MindroidFullApi {
 
     protected static void forward(int milis){
         forward();
-        Delay.msDelay(milis);
+        delay(milis);
         stop();
     }
 
@@ -95,7 +116,7 @@ public class MindroidFullApi {
 
     protected static void backward(int milis){
         backward();
-        Delay.msDelay(milis);
+        delay(milis);
         stop();
     }
 
@@ -106,7 +127,7 @@ public class MindroidFullApi {
 
     protected static void turnRight(int milis){
         turnRight();
-        Delay.msDelay(milis);
+        delay(milis);
         stop();
     }
 
@@ -117,7 +138,7 @@ public class MindroidFullApi {
 
     protected static void turnLeft(int milis){
         turnLeft();
-        Delay.msDelay(milis);
+        delay(milis);
         stop();
     }
 }
