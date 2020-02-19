@@ -16,9 +16,28 @@ public class Main extends MindroidFullApi {
 
     public static void main (String[] args){
         // Hiernach programmieren
-        LCD.drawString("test",0,0);
-        Delay.msDelay(1000);
-        forward(1000);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     }
 }

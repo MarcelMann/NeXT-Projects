@@ -15,7 +15,7 @@ public class MindroidFullApi {
     static EV3LargeRegulatedMotor motorL, motorR;
     static BaseSensor usSens, gyroSens, colorSensL, colorSensR;
 
-    static boolean gyro = false, us = false, colorL = false, colorR = false;
+    static protected boolean gyro = false, us = false, colorL = false, colorR = false;
     public static void init(){
 
         motorL = new EV3LargeRegulatedMotor(MotorPort.A);
@@ -44,17 +44,16 @@ public class MindroidFullApi {
      * @param text the text to display
      * @param row the row in which the text should be displayed, filtered by modulo 8 to produce values 0 to 7
      */
-    public final void drawString(final String text, final int row){
-        int calcRow = (row - 1) % 8;
-        LCD.drawString(text, 0, calcRow * 16);
+    public static final void drawString(final String text, final int row){
+        LCD.drawString(text, 0, row);
     }
 
     /**
      * Displays the given text onto the EV3 display at the 4th row (of 8). (see drawString(final String text, final int row)
      * @param text
      */
-    public final void drawString(final String text){
-        drawString(text, 4);
+    public static final void drawString(final String text){
+        drawString(text, 3);
     }
     protected static void delay(int ms){
         Delay.msDelay(ms);
